@@ -156,21 +156,26 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var num = n.toString();
-  if(n.charAt()=== 9){
+  if(num.charAt(0) === '9'){
     return true;
-  } return false;
-}
+  } 
+  
+    return false;
 
+}
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  for (var i = 0;i < arreglo.length; i++){
-    if (arreglo[i] !== arreglo[i + 1]) return true;
+  for (var i =0 ; i < arreglo.length - 1; i++) {
+    if(arreglo[i] !== arreglo[i+1]){
+      return false
+    }
   }
-  return false;
+  return true
 } 
+
 
 
 function mesesDelAño(array) {
